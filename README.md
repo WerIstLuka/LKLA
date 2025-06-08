@@ -7,20 +7,16 @@ set the string to character(s) that you dont have on your keyboard
 set shortcut to super+a and the command to `LKLA ä`
 
 # installation
-## debian or debian based
+## debian or debian based (only amd64)
 download the .deb file
-## other linux distros, bsd, windows or mac
-download the precompiled binaries
 
 ## building
 install git to download the repo ```sudo apt update && sudo apt install git```
 
 clone the repo ```git clone https://github.com/WerIstLuka/LKLA```
 
-change directory to int ```cd LKLA```
+change directory to LKLA ```cd LKLA```
 
-use the build script to build ```bash build.sh```
+use `go build` to build
 
-use the `-dev` flag to skip compiling for other architectures
-
-the binaries and debian packages will be in the build directory
+for the debian package you can do `bash mkdpkg.sh`
